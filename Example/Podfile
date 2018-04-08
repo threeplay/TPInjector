@@ -5,8 +5,8 @@ target 'TPInjector_Example' do
 
   target 'TPInjector_Tests' do
     inherit! :search_paths
+    pod 'TPInjector', :path => '../'
 
-    pod 'Quick', '~> 1.2.0'
     pod 'Nimble', '~> 7.0.2'
   end
 end

@@ -7,20 +7,27 @@
 //
 
 import Cocoa
+import TPInjector
 
 @NSApplicationMain
-class AppDelegate: NSObject, NSApplicationDelegate {
-
-
+class AppDelegate: NSObject, NSApplicationDelegate, Injectable {
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
-    // Insert code here to initialize your application
+    setupDefaultInjector()
+    AppDelegate.inject(LoginService.self)?.login()
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {
     // Insert code here to tear down your application
   }
 
+  private func setupDefaultInjector() {
+    DefaultInjector.set(key: "api_key", to: "12345678")
+    DefaultInjector.set(key: "api_url", to: NSURL(string: "https://someurl.com"))
+    DefaultInjector.set(key: "user_name", to: "userName")
+    DefaultInjector.register(service: NetworkService.self, with: NetworkServiceImpl())
+    DefaultInjector.register(service: LoginService.self, with: LoginServiceImpl())
+  }
 
 }
 

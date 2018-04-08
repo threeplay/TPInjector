@@ -9,35 +9,19 @@
 Pod::Spec.new do |s|
   s.name             = 'TPInjector'
   s.version          = '0.1.0'
-  s.summary          = 'A short description of TPInjector.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
+  s.summary          = 'Swift dependency injection'
   s.description      = <<-DESC
-TODO: Add long description of the pod here.
+Simple swift dependency injection framework
                        DESC
 
-  s.homepage         = 'https://github.com/Eliran Ben-Ezra/TPInjector'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
+  s.homepage         = 'https://github.com/threeplay/TPInjector'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Eliran Ben-Ezra' => 'eliran@gc.io' }
-  s.source           = { :git => 'https://github.com/Eliran Ben-Ezra/TPInjector.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Eliran Ben-Ezra' => 'eliran@threeplay.com' }
+  s.source           = { :git => 'https://github.com/threeplay/TPInjector.git', :tag => s.version.to_s }
 
+  s.swift_version = "4.0"
   s.platform = :osx
   s.osx.deployment_target = "10.10"
 
   s.source_files = 'TPInjector/Classes/**/*'
-
-  # s.resource_bundles = {
-  #   'TPInjector' => ['TPInjector/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'Cocoa'
-  # s.dependency 'AFNetworking', '~> 2.3'
 end

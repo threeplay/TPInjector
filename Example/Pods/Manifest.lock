@@ -1,0 +1,23 @@
+PODS:
+  - Nimble (7.0.3)
+  - TPInjector (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - TPInjector (from `../`)
+
+SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - Nimble
+
+EXTERNAL SOURCES:
+  TPInjector:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  TPInjector: 48f9bd1d8cb77fbdec7b37c118a1e15357b56e7f
+
+PODFILE CHECKSUM: 3ac4701de2fb97054fceb58ae3a0435effd226df
+
+COCOAPODS: 1.5.0

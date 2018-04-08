@@ -1,6 +1,6 @@
 # TPInjector
 
-[![CI Status](http://img.shields.io/travis/Eliran Ben-Ezra/TPInjector.svg?style=flat)](https://travis-ci.org/Eliran Ben-Ezra/TPInjector)
+[![CI Status](http://img.shields.io/travis/threeplay/TPInjector.svg?style=flat)](https://travis-ci.org/threeplay/TPInjector)
 [![Version](https://img.shields.io/cocoapods/v/TPInjector.svg?style=flat)](http://cocoapods.org/pods/TPInjector)
 [![License](https://img.shields.io/cocoapods/l/TPInjector.svg?style=flat)](http://cocoapods.org/pods/TPInjector)
 [![Platform](https://img.shields.io/cocoapods/p/TPInjector.svg?style=flat)](http://cocoapods.org/pods/TPInjector)
@@ -22,7 +22,7 @@ pod 'TPInjector'
 
 ## Author
 
-Eliran Ben-Ezra, eliran@gc.io
+Eliran Ben-Ezra, eliran@threeplay.com
 
 ## License
 

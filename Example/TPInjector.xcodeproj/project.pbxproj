@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		AC4C185F940421C2C1B002A3 /* Pods_TPInjector_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 59B44A0134EFD890B89A0BA8 /* Pods_TPInjector_Tests.framework */; };
+		B73F2DEA207AD36200C4CA6F /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F2DE9207AD36200C4CA6F /* LoginService.swift */; };
+		B73F2DEC207AD36D00C4CA6F /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73F2DEB207AD36D00C4CA6F /* NetworkService.swift */; };
 		DCFEB75935A875630CF81C13 /* Pods_TPInjector_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4E1A82C7A402105804B464B3 /* Pods_TPInjector_Example.framework */; };
 		ED83F67C20348A760038D96B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83F67B20348A760038D96B /* AppDelegate.swift */; };
 		ED83F67E20348A760038D96B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83F67D20348A760038D96B /* ViewController.swift */; };
 		ED83F68020348A760038D96B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ED83F67F20348A760038D96B /* Assets.xcassets */; };
 		ED83F68320348A760038D96B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ED83F68120348A760038D96B /* Main.storyboard */; };
-		ED83F68F20348A760038D96B /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83F68E20348A760038D96B /* Tests.swift */; };
+		ED83F68F20348A760038D96B /* SimpleInjectorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED83F68E20348A760038D96B /* SimpleInjectorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,15 +29,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1105D02F543180D93120FFFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		1105D02F543180D93120FFFA /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		130855927E1C780FBFB6D4F1 /* Pods-TPInjector_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPInjector_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TPInjector_Example/Pods-TPInjector_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4E1A82C7A402105804B464B3 /* Pods_TPInjector_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPInjector_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		56FE554F32C7463DC229DC14 /* Pods-TPInjector_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPInjector_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TPInjector_Tests/Pods-TPInjector_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		59B44A0134EFD890B89A0BA8 /* Pods_TPInjector_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TPInjector_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5A68055EEE5301AF4BB2309F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5A68055EEE5301AF4BB2309F /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		7AD3617031AD1C058880F6D2 /* Pods-TPInjector_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPInjector_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPInjector_Tests/Pods-TPInjector_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		B73F2DE9207AD36200C4CA6F /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		B73F2DEB207AD36D00C4CA6F /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		D53E28F29DEFFFDB80A09C9F /* Pods-TPInjector_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TPInjector_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TPInjector_Example/Pods-TPInjector_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		DC884ECD8254D9AD8F9B558C /* TPInjector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = TPInjector.podspec; path = ../TPInjector.podspec; sourceTree = "<group>"; };
+		DC884ECD8254D9AD8F9B558C /* TPInjector.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TPInjector.podspec; path = ../TPInjector.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		ED83F67820348A760038D96B /* TPInjector_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TPInjector_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED83F67B20348A760038D96B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ED83F67D20348A760038D96B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -44,7 +48,7 @@
 		ED83F68420348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ED83F68520348A760038D96B /* TPInjector.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TPInjector.entitlements; sourceTree = "<group>"; };
 		ED83F68A20348A760038D96B /* TPInjector_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TPInjector_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		ED83F68E20348A760038D96B /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
+		ED83F68E20348A760038D96B /* SimpleInjectorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleInjectorTests.swift; sourceTree = "<group>"; };
 		ED83F69020348A760038D96B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -88,6 +92,22 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		B73F2DE7207AD34700C4CA6F /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				B73F2DEB207AD36D00C4CA6F /* NetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		B73F2DE8207AD35100C4CA6F /* LoginService */ = {
+			isa = PBXGroup;
+			children = (
+				B73F2DE9207AD36200C4CA6F /* LoginService.swift */,
+			);
+			path = LoginService;
+			sourceTree = "<group>";
+		};
 		ED83F66F20348A760038D96B = {
 			isa = PBXGroup;
 			children = (
@@ -112,6 +132,8 @@
 		ED83F67A20348A760038D96B /* TPInjector */ = {
 			isa = PBXGroup;
 			children = (
+				B73F2DE8207AD35100C4CA6F /* LoginService */,
+				B73F2DE7207AD34700C4CA6F /* NetworkService */,
 				ED83F67B20348A760038D96B /* AppDelegate.swift */,
 				ED83F67D20348A760038D96B /* ViewController.swift */,
 				ED83F67F20348A760038D96B /* Assets.xcassets */,
@@ -125,7 +147,7 @@
 		ED83F68D20348A760038D96B /* Tests */ = {
 			isa = PBXGroup;
 			children = (
-				ED83F68E20348A760038D96B /* Tests.swift */,
+				ED83F68E20348A760038D96B /* SimpleInjectorTests.swift */,
 				ED83F69020348A760038D96B /* Info.plist */,
 			);
 			path = Tests;
@@ -152,7 +174,7 @@
 				ED83F67420348A760038D96B /* Sources */,
 				ED83F67520348A760038D96B /* Frameworks */,
 				ED83F67620348A760038D96B /* Resources */,
-				6BF902EE2BDEA2FA0525CA3D /* [CP] Embed Pods Frameworks */,
+				F05E937F0A902EA6E985E544 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -261,24 +283,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		6BF902EE2BDEA2FA0525CA3D /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TPInjector_Example/Pods-TPInjector_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/TPInjector/TPInjector.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPInjector.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TPInjector_Example/Pods-TPInjector_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		AB56BC5A64DD60780C0CFB95 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -286,13 +290,13 @@
 			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-TPInjector_Tests/Pods-TPInjector_Tests-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TPInjector/TPInjector.framework",
 				"${BUILT_PRODUCTS_DIR}/Nimble/Nimble.framework",
-				"${BUILT_PRODUCTS_DIR}/Quick/Quick.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPInjector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Nimble.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Quick.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -317,6 +321,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		F05E937F0A902EA6E985E544 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TPInjector_Example/Pods-TPInjector_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TPInjector/TPInjector.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TPInjector.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TPInjector_Example/Pods-TPInjector_Example-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -325,6 +347,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED83F67E20348A760038D96B /* ViewController.swift in Sources */,
+				B73F2DEA207AD36200C4CA6F /* LoginService.swift in Sources */,
+				B73F2DEC207AD36D00C4CA6F /* NetworkService.swift in Sources */,
 				ED83F67C20348A760038D96B /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -333,7 +357,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ED83F68F20348A760038D96B /* Tests.swift in Sources */,
+				ED83F68F20348A760038D96B /* SimpleInjectorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -475,6 +499,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TPInjector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.TPInjector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -491,6 +516,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TPInjector/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = org.cocoapods.demo.TPInjector;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -1,0 +1,6 @@
+framework module TPInjector {
+  umbrella header "TPInjector-umbrella.h"
+
+  export *
+  module * { export * }
+}
