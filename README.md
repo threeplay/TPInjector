@@ -16,16 +16,16 @@
   DefaultInjector.register(service: LoginService.self, with: LoginServiceImpl())
 ```
 
-To inject dependecies you add `Injectable` protocol to your class/struct definition and `inject` static method to inject dependencies:
+To inject dependecies you add `Injectable` protocol to your class/struct definition and `inject` / `tryInject` static methods to inject dependencies:
 
 ```swift
 class ClassWithDependecies: Injectable {
 
-  private let networkService = inject(NetworkService.self)!
-  private let api_key = inject("api_key", String.self)!
-  private let api_url: NSURL = inject("api_url")!
+  private let networkService = inject(NetworkService.self)
+  private let api_key = inject("api_key", String.self)
+  private let api_url: NSURL = tryInject("api_url") ?? NSURL(string: "https://default.com")
 
-  init(loginService: LoginService = inject()!) {
+  init(loginService: LoginService = inject()) {
 
   }
 }
