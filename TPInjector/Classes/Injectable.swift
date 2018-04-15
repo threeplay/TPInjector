@@ -8,19 +8,35 @@ public protocol Injectable {}
 public extension Injectable {
   public static var injector: Injector { return DefaultInjector.injector }
 
-  public static func inject<T>(_ key: String) -> T? {
+  public static func tryInject<T>(_ key: String) -> T? {
     return injector.get(key)
   }
 
-  public static func inject<T>(_ key: String, _ type: T.Type) -> T? {
+  public static func tryInject<T>(_ key: String, _ type: T.Type) -> T? {
     return injector.get(key)
   }
 
-  public static func inject<T>(_ service: T.Type) -> T? {
+  public static func tryInject<T>(_ service: T.Type) -> T? {
     return injector.get()
   }
 
-  public static func inject<T>() -> T? {
+  public static func tryInject<T>() -> T? {
     return injector.get()
+  }
+
+  public static func inject<T>(_ key: String) -> T {
+    return injector.get(key)!
+  }
+
+  public static func inject<T>(_ key: String, _ type: T.Type) -> T {
+    return injector.get(key)!
+  }
+
+  public static func inject<T>(_ service: T.Type) -> T {
+    return injector.get()!
+  }
+
+  public static func inject<T>() -> T {
+    return injector.get()!
   }
 }

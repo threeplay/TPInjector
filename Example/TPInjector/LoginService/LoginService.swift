@@ -16,8 +16,8 @@ class LoginServiceImpl: LoginService, Injectable {
 
   private let networkService: NetworkService
 
-  init(networkService: NetworkService = inject()!,
-       userName: String = inject("user_name")!) {
+  init(networkService: NetworkService = inject(),
+       userName: String = inject("user_name")) {
     self.networkService = networkService
     print("UserName: \(userName)")
   }

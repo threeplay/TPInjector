@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'TPInjector'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'Swift dependency injection'
   s.description      = <<-DESC
 Simple swift dependency injection framework

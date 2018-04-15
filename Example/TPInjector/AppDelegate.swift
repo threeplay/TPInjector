@@ -14,7 +14,7 @@ class AppDelegate: NSObject, NSApplicationDelegate, Injectable {
 
   func applicationDidFinishLaunching(_ aNotification: Notification) {
     setupDefaultInjector()
-    AppDelegate.inject(LoginService.self)?.login()
+    AppDelegate.inject(LoginService.self).login()
   }
 
   func applicationWillTerminate(_ aNotification: Notification) {
